@@ -6,27 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-form</title>
+    <script src="https://kit.fontawesome.com/075bc14f6e.js" crossorigin="anonymous"></script>
     <style>
-        .login-section{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: #000;
+            height: 70px;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(180, 180, 180);
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .login-section {
             display: flex;
             justify-content: center;
             margin-top: 70px;
         }
-        .login-container{
+
+        .login-container {
             width: 50%;
             /* border: 3px solid slateblue; */
         }
-        .login-form{
+
+        .login-form {
             /* width: 50%; */
             display: flex;
             flex-direction: column;
         }
-        .login-form input{
+
+        .login-form input {
             margin-top: 1em;
             font-size: 1.5em;
             padding: 10px 15px;
         }
-        .login-form input[type="submit"]{
+
+        .login-form input[type="submit"] {
             border: none;
             background-color: goldenrod;
             color: whitesmoke;
@@ -38,7 +60,20 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Service</a>
+                <a href="">About Us</a>
+                <a href="">Contract Us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
     <section class="login-section">
         <div class="login-container">
             <h2>Please Login</h2>
